@@ -1,0 +1,45 @@
+{% extends 'base.html' %} {% block title %}
+<title>EduNavigate</title>
+{% endblock %} {% block content %}
+
+<h1>Skill Recommendation</h1>
+<form method="post">
+  {% csrf_token %}
+
+  <label for="skill1">Skill 1:</label>
+  <select id="skill1" name="skill1" required>
+    <option value="" disabled selected>Select a skill</option>
+    {% for skill in skills1 %}
+    <option value="{{ skill }}">{{ skill }}</option>
+    {% endfor %}</select
+  ><br /><br />
+
+  <label for="skill2">Skill 2:</label>
+  <select id="skill2" name="skill2" required>
+    <option value="" disabled selected>Select a skill</option>
+    {% for skill in skills2 %}
+    <option value="{{ skill }}">{{ skill }}</option>
+    {% endfor %}</select
+  ><br /><br />
+
+  <label for="skill3">Skill 3:</label>
+  <select id="skill3" name="skill3" required>
+    <option value="" disabled selected>Select a skill</option>
+    {% for skill in skills3 %}
+    <option value="{{ skill }}">{{ skill }}</option>
+    {% endfor %}</select
+  ><br /><br />
+
+  <button type="submit">Get Recommendation</button>
+</form>
+
+{% if result %}
+<h2>Recommendation:</h2>
+<p><strong>Category:</strong> {{ result.Category }}</p>
+<p><strong>Subcategory:</strong> {{ result.Subcategory }}</p>
+
+{% if result.Category %}
+<form action="{% url 'category_detail' slug=result.Category %}" method="get">
+  <button type="submit">Get Textbooks</button>
+</form>
+{% endif %} {% endif %} {% endblock %}

@@ -1,0 +1,47 @@
+<diagram name="ER Diagram" id="1sWK9SYB2GkOxViCDm2w">
+  <mxGraphModel dx="1222" dy="490" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <root>
+      <mxCell id="0" />
+      <mxCell id="1" parent="0" />
+      <mxCell id="ZJPzI-w1D-z8dwIl4B66-3" value="" style="shape=mxgraph.ios7.icons.user;fillColor=#66BB6A;strokeColor=#FFFFFF;" vertex="1" parent="1">
+        <mxGeometry x="150" y="90" width="100" height="60" as="geometry" />
+      </mxCell>
+      <mxCell id="ZJPzI-w1D-z8dwIl4B66-4" value="" style="shape=mxgraph.ios7.icons.book;fillColor=#4FC3F7;strokeColor=#FFFFFF;" vertex="1" parent="1">
+        <mxGeometry x="370" y="90" width="100" height="60" as="geometry" />
+      </mxCell>
+      <mxCell id="ZJPzI-w1D-z8dwIl4B66-5" value="" style="shape=mxgraph.ios7.icons.list;fillColor=#FFA726;strokeColor=#FFFFFF;" vertex="1" parent="1">
+        <mxGeometry x="590" y="90" width="100" height="60" as="geometry" />
+      </mxCell>
+      <mxCell id="ZJPzI-w1D-z8dwIl4B66-6" value="" style="shape=mxgraph.ios7.icons.search;fillColor=#FF7043;strokeColor=#FFFFFF;" vertex="1" parent="1">
+        <mxGeometry x="810" y="90" width="100" height="60" as="geometry" />
+      </mxCell>
+      <mxCell id="ZJPzI-w1D-z8dwIl4B66-7" value="id" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxGeometry x="150" y="140" width="100" height="20" as="geometry" />
+      </mxCell>
+      <mxCell id="ZJPzI-w1D-z8dwIl4B66-8" value="title\nslug\ncover_image\nauthor\nsummary\npdf\nrecommended_books\nfiction_books\nbusiness_books" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxGeometry x="370" y="140" width="100" height="60" as="geometry" />
+      </mxCell>
+      <mxCell id="ZJPzI-w1D-z8dwIl4B66-9" value="id" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxGeometry x="590" y="140" width="100" height="20" as="geometry" />
+      </mxCell>
+      <mxCell id="ZJPzI-w1D-z8dwIl4B66-10" value="name\nslug" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxGeometry x="810" y="140" width="100" height="40" as="geometry" />
+      </mxCell>
+      <mxCell id="ZJPzI-w1D-z8dwIl4B66-11" value="id\nbook_id\ncategory_id" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxGeometry x="240" y="230" width="100" height="60" as="geometry" />
+      </mxCell>
+      <mxCell id="ZJPzI-w1D-z8dwIl4B66-12" value="" style="endArrow=blockThin;html=1;strokeWidth=2;exitX=0.5;exitY=1;" edge="1" parent="1" source="ZJPzI-w1D-z8dwIl4B66-7" target="ZJPzI-w1D-z8dwIl4B66-11">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      <mxCell id="ZJPzI-w1D-z8dwIl4B66-13" value="" style="endArrow=blockThin;html=1;strokeWidth=2;exitX=0.5;exitY=1;" edge="1" parent="1" source="ZJPzI-w1D-z8dwIl4B66-8" target="ZJPzI-w1D-z8dwIl4B66-11">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      <mxCell id="ZJPzI-w1D-z8dwIl4B66-14" value="" style="endArrow=blockThin;html=1;strokeWidth=2;exitX=0.5;exitY=1;" edge="1" parent="1" source="ZJPzI-w1D-z8dwIl4B66-9" target="ZJPzI-w1D-z8dwIl4B66-11">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      <mxCell id="ZJPzI-w1D-z8dwIl4B66-15" value="" style="endArrow=blockThin;html=1;strokeWidth=2;exitX=0.5;exitY=1;" edge="1" parent="1" source="ZJPzI-w1D-z8dwIl4B66-10" target="ZJPzI-w1D-z8dwIl4B66-11">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+    </root>
+  </mxGraphModel>
+</diagram>
